@@ -149,9 +149,16 @@ function handleScoreBoard()
     c4.fillText(gameSpeed.toFixed(1), 180,23);
     c4.strokeText ('High Score:', 5, 590);
     c4.fillText ('High Score:', 5, 590);
-    c4.strokeText (high_value, 160, 591);
-    c4.fillText (high_value, 160, 591);
-}
+    if(high_value != null)
+    { 
+        c4.strokeText (high_value, 160, 591);
+        c4.fillText (high_value, 160, 591);
+    }
+        else {
+            c4.strokeText (0, 160, 591);
+            c4.fillText (0, 160, 591);}
+        }
+
 
 function collisionDetect (rect1, rect2){
     if (rect1.x >= rect2.x + rect2.width || 
