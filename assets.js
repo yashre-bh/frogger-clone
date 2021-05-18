@@ -38,13 +38,11 @@ let frame = 0;
 let gameSpeed = 1;
 let isAlive = false;
 let isPaused = false;
-let highScore = 0;
-let hs = JSON.stringify(highScore);
-localStorage.setItem("high", hs);
-let high_value = JSON.parse(localStorage.getItem('high'));
+let high_value = localStorage.getItem('high');
+let highScore = high_value;
 
-
-
+// let hs = JSON.stringify(highScore);
+// localStorage.setItem("high", highScore);
 //localStorage.setItem('high', score);
 //let highScore = JSON.parse(window.localStorage.getItem('high'));
 

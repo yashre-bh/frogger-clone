@@ -123,9 +123,9 @@ function scoring(){
     score +=10;
     if (score > high_value)
      {
-        hs = score;
-        localStorage.setItem('high', hs);
-        high_value = JSON.parse(localStorage.getItem('high'));
+        // hs = score;
+        localStorage.setItem('high', score);
+        high_value = localStorage.getItem('high');
      }
     gameSpeed += 0.1;
     frogger.x = canvas.width/2 - frogger.width/2;
