@@ -1,6 +1,6 @@
 # Frogger
 
-Hosted [**here**](https://yashre-bh.github.io/frogger-clone/)
+Hosted [**here**](https://yashre-bh.github.io/frogger-clone/).
 
 The premise of the game is to help the frog safely cross the busy road and the river. The frog needs to avoid crashing with the moving cars, or drowning into the river.
 
