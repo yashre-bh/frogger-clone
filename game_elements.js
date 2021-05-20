@@ -118,7 +118,10 @@ class Obstacles{
     }
 
     update(){
+        
         this.x += this.speed*gameSpeed;
+        // this.speed *= gameSpeed;
+        // this.x += this.speed;
         
         if (this.speed > 0) {
             if(this.x > canvas.width + this.width){
@@ -199,7 +202,7 @@ function handleObstacles()
                 
                 if (collisionDetect(frogger, logsArray[i]))
                 {
-                    frogger.x += logsArray[i].speed;
+                    frogger.x+=(logsArray[i].speed * gameSpeed);
                     isAlive = true;
                     //console.log('collide');
                 }  
